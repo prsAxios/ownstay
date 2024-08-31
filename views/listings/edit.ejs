@@ -1,0 +1,61 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row mt-3">
+    <div class="col-8 offset-2">
+
+        <form method="POST" action="/listings/<%=editListing.id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+            <!-- Title Field -->
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input placeholder="Enter title" name="listing[title]" value="<%=editListing.title%>" class="form-control" required/>
+                <div class="valid-feedback">Title looks good!</div>
+            </div>
+
+            <!-- Description Field -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea placeholder="Enter description" name="listing[description]" class="form-control" required><%=editListing.description%></textarea>
+                <div class="invalid-feedback">Description is required</div>
+            </div>
+
+            <!-- Image Display -->
+            <div class="mb-3">
+                <label for="current-image" class="form-label">Current Image</label>
+                <div class="d-flex justify-content-center">
+                    <img src="<%= editListing.image.url %>" class="img-fluid" alt="Current Listing Image" style="max-width: 200px; height: auto;">
+                </div>
+            </div>
+
+            <!-- Image Upload Field -->
+            <div class="mb-3">
+                <label for="image" class="form-label">Image</label>
+                <input name="listing[image]" type="file" class="form-control"/>
+                <div class="valid-feedback">Image is optional</div>
+            </div>
+
+            <!-- Location Field -->
+            <div class="mb-3">
+                <label for="location" class="form-label">Location</label>
+                <input placeholder="Enter location" name="listing[location]" class="form-control" required value="<%=editListing.location%>"/>
+                <div class="invalid-feedback">Location is required</div>
+            </div>
+
+            <!-- Price Field -->
+            <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input placeholder="Enter price" name="listing[price]" value="<%=editListing.price%>" class="form-control" type="number" required/>
+                <div class="valid-feedback">Enter a valid price</div>
+            </div>
+
+            <!-- Country Field -->
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <input placeholder="Enter country" name="listing[country]" class="form-control" value="<%=editListing.country%>" required/>
+                <div class="invalid-feedback">Country is required</div>
+            </div>
+
+            <!-- Submit Button -->
+            <button class="btn btn-dark add-btn mt-3" type="submit">Confirm</button>
+        </form>
+
+    </div>
+</div>

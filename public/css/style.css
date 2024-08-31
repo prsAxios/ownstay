@@ -1,0 +1,146 @@
+body{
+  font-family: "Roboto Mono", monospace !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-regular{
+    color: lightcoral;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color:#222222 !important;
+
+}
+
+.footer-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:space-evenly;
+}
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+    margin-right: 1rem;
+}
+
+.f-info-links,
+.f-info-socialMedia,
+.f-info-brand
+{
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socialMedia i{
+    margin-right: 1rem;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: lightcoral;
+}
+
+.listing-card{
+    border:none !important;
+    margin-bottom: 2rem;
+}
+
+.anchor{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Animation keyframes */
+@keyframes cardHoverAnimation {
+    from {
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+.anchor:hover .card{
+    animation:cardHoverAnimation 0.3s ease forwards;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 20rem;
+}
+.card-body{
+    padding: 0;
+}
+.card-title{
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 1;
+}
+
+/*new Img */
+
+.add-btn{
+    background-color: lightcoral !important;
+    border: none !important;
+    color: white;
+}
+.add-btn:hover{
+    background-color: coral !important;
+    border: solid whitesmoke !important;
+    color: white;
+
+}
+/* show page */
+.show-img{
+    width: 100% !important;
+    height: 30vh !important;
+}
+
+.show-btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+#map{
+    height:400px;
+     width: 80vh;
+     border: solid palevioletred 1px;
+}
+
+.btn-carrot {
+    background-color: #e67e22;
+    color: white;
+    border: 1px solid #e67e22;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-carrot:hover {
+    background-color: #d35400;
+    border-color: #d35400;
+    color: white;
+}
+

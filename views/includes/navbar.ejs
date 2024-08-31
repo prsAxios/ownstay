@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Left-Aligned Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="/listings">
+            <i class="fa-regular fa-compass" style="font-size: 1.5rem; margin-right: 8px;"></i>
+            <span class="text-airbnb fw-bold">airbnb</span>
+        </a>
+
+        <!-- Centered Search Form -->
+        <div class="mx-auto">
+            <form class="d-flex search-form" role="search">
+                <input class="form-control me-2" type="search" placeholder="Start your search" aria-label="Search">
+                <button class="btn btn-search" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <!-- Right-Aligned Buttons -->
+        <ul class="navbar-nav d-flex mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link text-airbnb mx-1" href="/listings/new">Add New Listing</a>
+            </li>
+            <% if (!currentUser) { %>
+                <li class="nav-item">
+                    <a class="nav-link text-airbnb mx-1" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-airbnb mx-1" href="/signup">Signup</a>
+                </li>
+            <% } else {  %>
+                <li class="nav-item">
+                    <a class="nav-link text-airbnb mx-1" href="/logout">Logout</a>
+                </li>
+            <%  }  %>
+        </ul>
+    </div>
+</nav>
+
+<!-- Custom Styles -->
+<style>
+    .text-airbnb {
+        color: #FF5A5F; /* Airbnb reddish-pink color */
+    }
+    .search-form input {
+        border-radius: 20px 0 0 20px;
+        border: 1px solid #ccc;
+        padding: 0.5rem 1rem;
+        min-width: 300px;
+    }
+    .btn-search {
+        border-radius: 0 20px 20px 0;
+        border: 1px solid #ccc;
+        background-color: #FF5A5F;
+        color: white;
+    }
+    .btn-search:hover {
+        background-color: #e74c3c; /* Darker shade on hover */
+    }
+    .nav-link.text-airbnb:hover {
+        color: #e74c3c; /* Darker shade on hover */
+    }
+</style>
