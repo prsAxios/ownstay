@@ -26,7 +26,7 @@ const path = require('path');
 
 // const MONGO_URL = 'mongodb://127.0.0.1:27017/airbnb';
 const db_url = process.env.ATLASDB_URL;
-// const SECRET = process.env.SECRET;
+const SECRET = process.env.SECRET;
 async function main() {
     await mongoose.connect(db_url);
     console.log("MongoDb connection successful...");
@@ -98,6 +98,7 @@ app.use("/",userRoute);
 
 
 // Sample routes
+
 // app.get("/", (req, res) => {
 //     console.log("root");
 //     res.send("Hi, I am root...");
