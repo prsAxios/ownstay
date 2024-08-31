@@ -44,6 +44,6 @@ router.route("/:id")
 router.get("/:id/edit", isLoggedIn, ValidOwner, wrapAsync(edit));
 
 // Route to delete a specific listing
-router.delete("/:id", isLoggedIn, ValidOwner, wrapAsync(deleteList));
+router.get("/:id/delete", isLoggedIn, ValidOwner, wrapAsync(deleteList));
 
 module.exports = router;
