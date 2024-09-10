@@ -1,5 +1,14 @@
 # 💫 About Me:
-I am currently pursuing my masters degree in computer application<br>I know java with dsa , mern stack , ejs I love to code and to solve real life problems through my coding<br>
+👨‍💻 I am currently pursuing my **Master's degree in Computer Applications**.  
+💡 Passionate about **coding** and solving **real-life problems** through technology.  
+🔧 I have experience with **Java**, **Data Structures and Algorithms (DSA)**, the **MERN stack**, and **EJS**.  
+🚀 I love building **innovative applications** and exploring new technologies!
+
+🌱 **Currently Learning:** Deepening my understanding of advanced **JavaScript** and **React**.  
+🎯 **Goal:** To build impactful solutions that solve real-world challenges.
+
+✨ **Fun Fact:** I'm always up for a **coding challenge** or a **hackathon**!
+
 
 
 ## 🌐 Socials:
